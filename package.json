@@ -1,0 +1,25 @@
+{
+  "name": "stellarforge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The developer CLI and scaffolding toolkit for Soroban smart contracts on Stellar.",
+  "license": "MIT",
+  "packageManager": "pnpm@9.15.1",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "pnpm --filter @stellarforge/cli build",
+    "dev": "pnpm --filter @stellarforge/cli dev",
+    "lint": "pnpm -r --if-present lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "test": "pnpm -r --if-present test",
+    "templates:test": "cargo test",
+    "templates:fmt": "cargo fmt --check",
+    "templates:clippy": "cargo clippy --all-targets -- -D warnings"
+  },
+  "devDependencies": {
+    "prettier": "^3.4.2"
+  }
+}

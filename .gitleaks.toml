@@ -1,0 +1,17 @@
+title = "QuestBoard gitleaks config"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Allow documented placeholders and public testnet artifacts."
+regexes = [
+  # Stellar public keys (G...) and contract ids (C...) are public, not secrets.
+  '''G[A-Z2-7]{55}''',
+  '''C[A-Z2-7]{55}''',
+]
+paths = [
+  '''.*\.env\.example$''',
+  '''packages/quest-client/.*''',
+  '''docs/.*''',
+]

@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Rust / Soroban
+target/
+**/*.rs.bk
+
+# Builds
+dist/
+.next/
+out/
+build/
+
+# Env & secrets — never commit
+.env
+.env.local
+.env.*.local
+.stellar/
+
+# Database (local SQLite)
+*.sqlite
+*.sqlite-journal
+*.db
+server/prisma/dev.db*
+
+# Logs & OS
+*.log
+npm-debug.log*
+.DS_Store
+
+# Editor
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.vercel

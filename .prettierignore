@@ -1,0 +1,10 @@
+node_modules
+dist
+.next
+out
+build
+target
+pnpm-lock.yaml
+packages/quest-client/src/index.ts
+server/prisma/migrations
+*.md

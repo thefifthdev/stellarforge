@@ -1,0 +1,17 @@
+[package]
+name = "counter"
+version = "0.1.0"
+edition = "2021"
+publish = false
+license = "MIT"
+description = "A minimal Soroban counter contract — the StellarForge 'counter' starter template."
+
+[lib]
+crate-type = ["lib", "cdylib"]
+doctest = false
+
+[dependencies]
+soroban-sdk = { workspace = true }
+
+[dev-dependencies]
+soroban-sdk = { workspace = true, features = ["testutils"] }

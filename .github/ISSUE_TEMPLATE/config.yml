@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: StellarForge docs
+    url: https://github.com/thefifthdev/stellarforge/tree/main/docs
+    about: Architecture, deployment, contract API, and local setup guides.
+  - name: Stellar Wave / Drips
+    url: https://www.drips.network/
+    about: Pick up issues labeled "Stellar Wave" to earn contributor rewards.

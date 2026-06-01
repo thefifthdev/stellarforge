@@ -1,0 +1,3 @@
+packages:
+  - "packages/*"
+# templates/ is a Cargo workspace of starter Soroban contracts (managed by cargo).
