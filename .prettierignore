@@ -5,6 +5,5 @@ out
 build
 target
 pnpm-lock.yaml
-packages/quest-client/src/index.ts
-server/prisma/migrations
+**/test_snapshots
 *.md
